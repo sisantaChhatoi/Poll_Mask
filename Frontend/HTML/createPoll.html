@@ -9,11 +9,25 @@
   <body>
     <header></header>
     <main>
+      <form class="newPoll">
+        <label for="pollStatement">Poll Statement: </label>
+        <input
+          type="text"
+          name="poll-statment"
+          id="pollStatement"
+          autocomplete="off"
+        />
 
-        <div class="createPollSection">
+        <label for="op1" id="lab1">Option 1: </label>
+        <input type="text" name="poll-option" id="op1" autocomplete="off" />
+        <button id="addOption">+</button>
+        <button id="removeOption">-</button>
+        <button id="submitBtn">Create Poll!</button>
 
-            
-        </div>
+        <!-- * Adjust the button in a static way in a position -->
+
+        <div class="moreOptions"></div>
+      </form>
     </main>
 
     <footer>
@@ -21,4 +35,5 @@
     </footer>
   </body>
   <script src="/Frontend/JS/createPollScript.js"></script>
+  <script src="/Frontend/JS/footerScript.js"></script>
 </html>
